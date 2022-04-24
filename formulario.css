@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: url('imagenes/fondus.jpg');
+}
+  
+
+p{ font-size: 1.25em;}
+h4{ font-size: 22px; margin-bottom: 20px;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #6B33FF;
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #6B33FF;
+}
+
+#registro .caja1{
+    padding: 100px 12px;
+}
+
+#registro .caja{
+    width: 350px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+#registro .control{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #6B33FF;
+    font-size: 18px;
+    color: white;
+}
+
+#registro .boton{
+    width: 100%;
+    background: #6B33FF;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#registro .boton:hover{
+    background-color: #4722ad;
+}
+
+
+
+footer p{
+    padding: 15px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    margin-top: 120px;
+    background-color: rgb(230,230,230);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media (min-width: 720px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    footer .container{
+        margin-top: 200px;
+        
+    }
+}
